@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class ATM {
 
-    static final int CORRECT_PIN = 1234;
+    static final int CORRECT_PIN = 2007;
     static final int MAX_ATTEMPTS = 3;
-    static final int MAX_TRANSACTIONS = 100;
+    static final int MAX_TRANSACTIONS = 50;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,7 +14,6 @@ public class ATM {
         int count = 0;
         double balance = 0;
 
-        // ---------- Authentication ----------
         boolean loggedIn = false;
         int attempts = 0;
 
@@ -39,7 +38,6 @@ public class ATM {
 
         System.out.println("Login successful. Welcome!");
 
-        // ---------- Main menu ----------
         boolean running = true;
 
         while (running) {
@@ -117,7 +115,6 @@ public class ATM {
         sc.close();
     }
 
-    // Reads an integer safely; returns -1 if the input is not a valid integer
     static int readInt(Scanner sc) {
         String line = sc.nextLine().trim();
         try {
@@ -127,7 +124,6 @@ public class ATM {
         }
     }
 
-    // Reads a number safely; returns -1 if the input is not a valid number
     static double readDouble(Scanner sc) {
         String line = sc.nextLine().trim();
         try {
