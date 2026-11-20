@@ -1,3 +1,4 @@
+package com.mycompany.atm;
 import java.util.Scanner;
 
 public class ATM {
